@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>My Gallery</title>
+
+  <link 
+    rel="icon" 
+    type="image/png"
+    href="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773353/final_project/r3z3ed8hwwguxofi51gn.png"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="glow"></div>
+  <div class="glow2"></div>
+
+  <header>
+
+    <h1>✨ My Art Gallery</h1>
+
+    <p>2D • 3D • Creative Design Collection</p>
+
+    <!-- FILTER -->
+
+    <div class="filters">
+      <button onclick="filterCards('all')">
+        All
+      </button>
+
+      <button onclick="filterCards('2d')">
+        2D
+      </button>
+
+      <button onclick="filterCards('3d')">
+        3D
+      </button>
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+      <input 
+        type="text"
+        id="searchInput"
+        placeholder="Tìm kiếm artwork..."
+        onkeyup="searchCards()"
+      >
+    </div>
+
+  </header>
+
+  <section class="gallery">
+
+    <!-- ========================= -->
+    <!-- 3D -->
+    <!-- ========================= -->
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773799/final_project/wlgjkfhu7pb5qwffcvea.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Lịch vạn niên
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773800/final_project/pf4k2hlklxjkrkkcpias.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Tiệm Trà Sữa
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773801/final_project/kn30pybhdjhez3ilefn6.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Bánh Donut
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773802/final_project/y1dsomllcysqdwmn5pt5.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Game Over Screen
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773803/final_project/jq9im4ukvgw2bbkxa3v8.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Hộp Quà
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773805/final_project/dkekcxwz9drknv3smfg4.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Ốp Lưng
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 3d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773809/final_project/wjs7dtsd0q2uucruc1io.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Cốc Trà Sữa Man's Tea
+        </div>
+
+        <div class="tag">
+          3D
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- 2D -->
+    <!-- ========================= -->
+
+    <div class="card 2d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773804/final_project/abbsc0f775gwbnvmf0qq.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Tranh tiệm trà sữa ở gần thác nước
+        </div>
+
+        <div class="tag">
+          2D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 2d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773806/final_project/oqjwx3rmxnsahofzwzm4.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Bánh Pancake
+        </div>
+
+        <div class="tag">
+          2D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 2d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773807/final_project/ixnemhwxplqbk9unw3ej.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Trang Trí Đối Xứng
+        </div>
+
+        <div class="tag">
+          2D
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card 2d-card">
+
+      <img 
+        src="https://res.cloudinary.com/dvhiojpvf/image/upload/v1779773808/final_project/gsxzoijlorfxgiuiiqcv.jpg"
+
+        onclick="openModal(this.src)"
+      >
+
+      <div class="card-content">
+        <div class="title">
+          Template hộp trà
+        </div>
+
+        <div class="tag">
+          2D
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- IMAGE MODAL -->
+  <!-- ========================= -->
+
+  <div class="image-modal" id="imageModal">
+
+    <span 
+      class="close-btn"
+      onclick="closeModal()"
+    >
+      ✕
+    </span>
+
+    <img id="modalImage">
+
+  </div>
+
+  <footer>
+    🚀 Made with HTML + CSS + JS
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
